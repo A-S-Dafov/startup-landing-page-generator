@@ -7,6 +7,6 @@
     "live-server": "^1.2.0"
   },
   "scripts": {
-    "start": "live-server index.html"
+    "start": "live-server public"
   }
 }
