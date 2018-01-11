@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SLPG</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
-    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/main.js"></script>
 </head>
 
 
@@ -18,10 +19,10 @@
     </header>
 
     <div>
-        <form method="post" action="../server/server.php">
+        <form class="login-form" method="post" action="../server/server.php">
             <input placeholder="username" type="text" name="username" minlength="6" maxlength="30">
             <input placeholder="password" type="password" name="password" minlength="6" maxlength="30">
-            <button>Login</button>
+            <button class="login-button">Login</button>
         </form>
     </div>
 </body>

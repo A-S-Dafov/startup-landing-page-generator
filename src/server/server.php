@@ -15,7 +15,7 @@
                     break;
             }
         }
-        // we'll put the errors in the DOM later
+        
         showErrors($errors);
     }
 
