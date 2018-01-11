@@ -5,21 +5,23 @@
             switch ($key) {
                 case "username":
                     if (strlen(htmlspecialchars($value)) < 6 || strlen(htmlspecialchars($value)) > 30) {
-                        array_push($errors, "subjectName of invalid size");
+                        array_push($errors, "username must be between 6 and 30 symbols long");
                     }
                     break;
                 case "password":
                     if (strlen(htmlspecialchars($value)) < 6 || strlen(htmlspecialchars($value)) > 30) {
-                        array_push($errors, "teacher of invalid length");
+                        array_push($errors, "password must be between 6 and 30 symbols long");
                     }
                     break;
             }
         }
         // we'll put the errors in the DOM later
-        printErrors($errors);
+        showErrors($errors);
     }
 
-    function printErrors($errors) {
-        var_dump($errors);
+    function showErrors($errors) {
+        foreach ($errors as $error) {
+            echo "<p>$error</p>";
+        }
     }
 ?>
